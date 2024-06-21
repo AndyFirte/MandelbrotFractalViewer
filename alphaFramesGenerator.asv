@@ -1,0 +1,9 @@
+clc; close all; clear
+
+A = imread("CH_Mandelbrot.png");
+    
+B = rgb2hsv(A);
+
+
+
+C = hsv2rgb(B);

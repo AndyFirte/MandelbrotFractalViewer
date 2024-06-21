@@ -1,0 +1,10 @@
+YminStart = -1.7;   YminEnd = 0.58159295;
+YmaxStart = 1.7;    YmaxEnd =  0.58159297;
+Y_limit = (YminEnd + YmaxEnd)/2;
+
+XminStart = -2.4;   XminEnd = -0.4600;
+XmaxEnd = XminEnd + (YmaxEnd - YminEnd) * ratio;
+X_limit = (XminEnd + XmaxEnd)/2;
+
+IterStart = 250;
+IterEnd = 450;

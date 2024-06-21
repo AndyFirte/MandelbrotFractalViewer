@@ -1,0 +1,26 @@
+YminStart = -1.7;   YminEnd = 1.1570555;
+YmaxStart = 1.7;    YmaxEnd = 1.157058;
+Y_limit = (YminEnd + YmaxEnd)/2;
+
+XminStart = -2.1;   XminEnd = 0.665004;
+XmaxEnd = XminEnd + (YmaxEnd - YminEnd) * ratio;
+X_limit = (XminEnd + XmaxEnd)/2;
+
+IterStart = 100;    IterEnd = 350;
+
+TreshStart = 13;     TreshEnd = 20;
+
+DegreeStart = -2;   DegreeEnd = -2;
+
+for index = 958 : 1 : FrameEnd
+
+    Mapa = zeros(M,N,2);
+
+    Ymin = RemapeoExponencial(index, FrameEnd, YminStart, YminEnd, Y_limit);
+    Ymax = RemapeoExponencial(index, FrameEnd, YmaxStart, YmaxEnd, Y_limit);
+
+    Xmin = RemapeoExponencial(index, FrameEnd, XminStart, XminEnd, X_limit);
+    Xmax = Xmin + (Ymax - Ymin) * ratio;
+    
+    Iter = RemapeoExponencial(index, FrameEnd, IterStart, IterEnd, 0);
+    Tresh = RemapeoExponencial(index, FrameEnd, TreshStart, TreshEnd, 0);

@@ -1,0 +1,6 @@
+Video_1
+Zn = Zn^(-2) + C
+x en [-0.9, 0.8]
+y en [-0.05, 0.05]
+treshold de 2 a 15
+100 iteraciones

@@ -1,0 +1,26 @@
+Video 11: zoom en z^-2
+Video 8: -1 a -3
+Video 1: cambio de tresh en z^-2
+
+Fractal de Multibrot, exponentes negativos.
+
+Modifiqué mi graficador de Mandelbrot para que grafique cualquier función compleja, y de paso lo adapté para que pueda hacer videos con zoom. 
+
+Si en lugar de Z^2+C usamos Z^d+C obtenemos el apodado "Conjunto de Multibrot". Hay varios videos enfocándose en valores de d positivos, por lo que intenté enfocarme en los valores negativos.
+
+*Video 1, zoom en Multibrot con exponente -2. 
+Función: z^(-2) + C | Zoom en (0.665004 + 1.15705i) | Iteraciones aumentando exponencialmente de 100 a 350 | Treshold aumentando exponencialmente de 13 a 20
+
+*Video 2, varios Multibrots con exponente negativo. 
+Función z^d + C | d aumentando de -1 a -3 | Iteraciones: 100 | Treshold: No me acuerdo xdd, creo que 8 o 13
+
+*Video 3, cambiando el treshold de un Multibrot. 
+Función z^(-2) + C | Re(z) ∈ [-0.9, 0.8], Im(z) ∈ [-0.05, 0.05] | Iteraciones: 100 | Treshold aumentando linealmente de 2 a 15
+
+Intenté graficar funciones distintas a las de Multibrot, como sin(z) + C. Pero no encontré nada particularmente interesante.
+
+#mandelbrot #fractal #fractalart #matlab #math #matematicas #matematica #complexnumbers #imaginarynumbers #programming #programacion #multibrot
+
+Video 5: zoom mandelbrot
+Video 6: 1 a 4
+Video 10: cambio iteraciones
