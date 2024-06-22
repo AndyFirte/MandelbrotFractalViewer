@@ -17,7 +17,7 @@ X_limit = (XminEnd + XmaxEnd)/2;
 
 IterStart = 100;    IterEnd = 350;
 
-TreshStart = 13;     TreshEnd = 20;
+ThreshStart = 13;     ThreshEnd = 20;
 
 DegreeStart = -2;   DegreeEnd = -2;
 
@@ -32,7 +32,7 @@ for index = FrameStart : 1 : FrameEnd
     Xmax = Xmin + (Ymax - Ymin) * ratio;
     
     Iter = RemapeoExponencial(index, FrameEnd, IterStart, IterEnd, 0);
-    Tresh = RemapeoExponencial(index, FrameEnd, TreshStart, TreshEnd, 0);
+    Thresh = RemapeoExponencial(index, FrameEnd, ThreshStart, ThreshEnd, 0);
     
     Degree  = Remapeo(index, FrameStart, FrameEnd, DegreeStart, DegreeEnd);
     
@@ -55,7 +55,7 @@ for index = FrameStart : 1 : FrameEnd
     parfor i=1:M
         for j=1:N
             Z = Mapa(i,j,1) + Mapa(i,j,2)*1i;
-            gray = MandelbrotIteration(Z, Iter, Tresh, Degree);
+            gray = MandelbrotIteration(Z, Iter, Thresh, Degree);
             Mundo(i,j) = gray;
         end
     end

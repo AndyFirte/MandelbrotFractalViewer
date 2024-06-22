@@ -57,7 +57,7 @@ Xmin = -2.6; Xmax = Xmin + (Ymax - Ymin) * ratio;
 % Xmin = 0.665004; Xmax = Xmin + (Ymax - Ymin) * ratio;
 
 %Iter = 450; tresh = 2;
-Iter = 100; tresh = 2;
+Iter = 100; thresh = 2;
 
 degree = 2;
 
@@ -81,7 +81,7 @@ for i=1:M
     i;
     for j=1:N
         Z = Mapa(i,j,1) + Mapa(i,j,2)*1i;
-        gray = MandelbrotIteration(Z, Iter, tresh, degree);
+        gray = MandelbrotIteration(Z, Iter, thresh, degree);
         Mundo(i,j) = gray;
     end
 end
@@ -103,6 +103,6 @@ end
 
 Fire = ind2rgb(A,hot(256));
 
-Mostrar(Fire,("Iter:" + num2str(Iter) + " Tresh:" + num2str(tresh)))
+Mostrar(Fire,("Iter:" + num2str(Iter) + " Tresh:" + num2str(thresh)))
 
 
