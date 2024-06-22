@@ -10,4 +10,6 @@ The file framesGenerator.m generates frames for videos to display changes in zoo
 
 Some results can be seen [here](https://www.instagram.com/p/C0Lyx1Eu1j0/)
 
+The file videoGenerator.m converts frames into a video in avi format
+
 <img title="a title" alt="Alt text" src="https://i.imgur.com/J12WfWs.jpeg">
